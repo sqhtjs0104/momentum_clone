@@ -1,5 +1,82 @@
 body {
-    background-color: beige;
+    background-color: white;
+    margin: 0;
+    width: 100vw;
+    height: 100vh; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.side_bar {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+
+    margin: 10px;
+    padding: 20px 50px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.side_bar__button {
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.search {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 500px;
+    height: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search form input {
+    border: none;
+    width: 450px;
+    height: 28px;
+    font-size: 16px;
+}
+.search form input:focus {
+    border: none;
+}
+#weather,
+#clock,
+#greeting,
+#quote {
+    color: white;
+    font-weight: 800;
+}
+#clock {
+    font-size: 64px;
+    margin: 0 0 -10px 0;
+}
+#quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quote span:first-child {
+    font-size: 22px;
+    margin: 20px 0px 10px 0px;
+}
+#quote span:last-child {
+    font-size: 16px;
 }
 .hidden {
     display: none;
